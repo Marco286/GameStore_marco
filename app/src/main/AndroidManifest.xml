@@ -11,17 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GameStore_marco">
+
+        <!-- ACTIVITY 2: GameDetailActivity (tem que estar registada!) -->
+        <activity
+            android:name=".controllers.GameDetailActivity"
+            android:exported="false" />
+
+        <!-- ACTIVITY 1: MainActivity (launcher) -->
         <activity
             android:name=".controllers.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.GameStore_marco">
+            android:label="@string/app_name">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
         </activity>
+
     </application>
 
 </manifest>
