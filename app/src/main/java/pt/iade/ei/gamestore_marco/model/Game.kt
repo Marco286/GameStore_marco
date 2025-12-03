@@ -12,3 +12,4 @@ data class Game(
     val imageRes: Int,
     val items: List<StoreItem>
 ) : Parcelable
+

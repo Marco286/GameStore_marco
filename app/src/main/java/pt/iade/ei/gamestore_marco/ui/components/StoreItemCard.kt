@@ -1,4 +1,4 @@
-package pt.iade.ei.gamestore_marco.views
+package pt.iade.ei.gamestore_marco.ui.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
