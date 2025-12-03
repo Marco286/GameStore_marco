@@ -66,7 +66,7 @@ fun GameListScreen(
                     game = game,
                     onClick = {
                         val intent = Intent(context, GameDetailActivity::class.java)
-                        intent.putExtra(MainActivity.EXTRA_GAME, game) // CORREÇÃO AQUI 🔥
+                        intent.putExtra(MainActivity.EXTRA_GAME, game)
                         context.startActivity(intent)
                     }
                 )

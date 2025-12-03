@@ -13,7 +13,7 @@ import pt.iade.ei.gamestore_marco.ui.screens.GameListScreen
 import pt.iade.ei.gamestore_marco.ui.theme.GameStore_marcoTheme
 import pt.iade.ei.gamestore_marco.R
 
-// Apenas para demonstração — substitui pelos teus verdadeiros dados se for preciso
+
 private val sampleGames = listOf(
     Game(
         id = 1,
@@ -22,7 +22,7 @@ private val sampleGames = listOf(
         imageRes = R.drawable.fortnitelogo,
         items = listOf(
             StoreItem(1, "Skin Iconic", "Skin que te vai deixar com mais estilo nas tuas partidas.", 14.89, R.drawable.icoicfortnite),
-            StoreItem(2, "13.500 V-Bucks", "Com tantas V-Bucks podes comprar o que quiseres!.", 13.50, R.drawable.vbucksfortnite),
+            StoreItem(2, "13.500 V-Bucks", "Com tantas V-Bucks podes comprar o que quiseres!", 13.50, R.drawable.vbucksfortnite),
             StoreItem(3, "Passe de Batalha", "Completa todos os níveis e recebe prémios incríveis!", 9.99, R.drawable.passedebatalhafoty)
         )
     ),
@@ -56,7 +56,7 @@ class MainActivity : ComponentActivity() {
                 Surface(
                     modifier = Modifier.fillMaxSize()
                 ) {
-                    // A UI principal fica na GameListScreen
+
                     GameListScreen(
                         games = sampleGames
                     )

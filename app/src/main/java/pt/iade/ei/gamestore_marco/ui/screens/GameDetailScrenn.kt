@@ -54,6 +54,7 @@ fun GameDetailScreen(game: Game) {
                     fontWeight = FontWeight.Bold
                 )
 
+
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Row(
@@ -113,7 +114,7 @@ fun GameDetailScreen(game: Game) {
                 }
             }
         }
-    } // ← ESTA CHAVETA FALTAVA! AGORA FECHA O IF CORRETAMENTE
+    }
 
     // ---------- MAIN SCREEN ----------
     Scaffold(

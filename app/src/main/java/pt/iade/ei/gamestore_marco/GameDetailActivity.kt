@@ -15,16 +15,16 @@ class GameDetailActivity : ComponentActivity() {
 
         enableEdgeToEdge()
 
-        // Recebe o jogo da MainActivity
+
         val game = intent.getParcelableExtra<Game>(MainActivity.EXTRA_GAME)
 
-        // Se não existir, fecha a Activity
+
         if (game == null) {
             finish()
             return
         }
 
-        // Mostra o ecrã de detalhes usando Compose
+
         setContent {
             GameStore_marcoTheme {
                 GameDetailScreen(game = game)

@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.material3.MaterialTheme
@@ -32,7 +33,7 @@ fun StoreItemCard(item: StoreItem, onClick: () -> Unit) {
             verticalAlignment = Alignment.CenterVertically
         ) {
 
-            // IMAGEM DO ITEM (como na 2ª print do briefing)
+            // IMAGEM DO ITEM
             Image(
                 painter = painterResource(id = item.imageRes),
                 contentDescription = item.name,
@@ -46,14 +47,27 @@ fun StoreItemCard(item: StoreItem, onClick: () -> Unit) {
 
             // NOME + DESCRIÇÃO
             Column(modifier = Modifier.weight(1f)) {
-                Text(item.name, style = MaterialTheme.typography.titleMedium)
+
+                Text(
+                    text = item.name,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+
                 Spacer(Modifier.height(4.dp))
-                Text(item.description, maxLines = 2)
+
+                Text(
+                    text = item.description,
+                    style = MaterialTheme.typography.bodyMedium,
+                    maxLines = 2
+                )
             }
 
-            // PREÇO À DIREITA
+
+            // PREÇO
             Text(
-                text = "$${item.price}",
+                text = "€${"%.2f".format(item.price)}",
                 style = MaterialTheme.typography.titleMedium
             )
         }
