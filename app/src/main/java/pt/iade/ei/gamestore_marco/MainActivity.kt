@@ -23,7 +23,7 @@ private val sampleGames = listOf(
         items = listOf(
             StoreItem(1, "Skin Iconic", "Skin que te vai deixar com mais estilo nas tuas partidas.", 14.89, R.drawable.icoicfortnite),
             StoreItem(2, "13.500 V-Bucks", "Com tantas V-Bucks podes comprar o que quiseres!.", 13.50, R.drawable.vbucksfortnite),
-            StoreItem(3, "Passe de Batalha", "Completa todos os níveis e recebe prémios incríveis!", 9.99, R.drawable.passedebatalhafort)
+            StoreItem(3, "Passe de Batalha", "Completa todos os níveis e recebe prémios incríveis!", 9.99, R.drawable.passedebatalhafoty)
         )
     ),
     Game(
@@ -32,8 +32,8 @@ private val sampleGames = listOf(
         description = "Pokémon GO é um jogo eletrônico free-to-play de realidade aumentada voltado para smartphones. O jogo é desenvolvido e publicado pela Niantic, Inc., em colaboração com a Nintendo e a The Pokémon Company.",
         imageRes = R.drawable.pokemongo,
         items = listOf(
-            StoreItem(4, "100 Pokebolas", "Muitas pokebolas para apanhar pokémons.", 10.99, R.drawable.pokebolas),
-            StoreItem(5, "150 Pokecoins", "Moedas para comprar itens na loja.", 7.99, R.drawable.pokecoins),
+            StoreItem(4, "100 Pokebolas", "Muitas pokebolas para apanhar pokémons.", 10.99, R.drawable.pokeballs),
+            StoreItem(5, "150 Pokecoins", "Moedas para comprar itens na loja.", 7.99, R.drawable.pokecoinss),
             StoreItem(6, "Raid Pass", "Luta nos ginásios e participa em raids especiais.", 11.49, R.drawable.raidpass)
         )
     )
