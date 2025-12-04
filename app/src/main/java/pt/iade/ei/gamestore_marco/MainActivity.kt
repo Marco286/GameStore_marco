@@ -12,6 +12,9 @@ import pt.iade.ei.gamestore_marco.model.StoreItem
 import pt.iade.ei.gamestore_marco.ui.screens.GameListScreen
 import pt.iade.ei.gamestore_marco.ui.theme.GameStore_marcoTheme
 import pt.iade.ei.gamestore_marco.R
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
+import pt.iade.ei.gamestore_marco.ui.theme.GameStore_marcoTheme
 
 
 private val sampleGames = listOf(
@@ -63,5 +66,14 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun MainActivityPreview() {
+    GameStore_marcoTheme {
+        GameListScreen(
+            games = sampleGames
+        )
     }
 }

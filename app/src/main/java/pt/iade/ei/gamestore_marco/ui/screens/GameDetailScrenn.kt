@@ -24,6 +24,10 @@ import androidx.compose.ui.unit.dp
 import pt.iade.ei.gamestore_marco.model.Game
 import pt.iade.ei.gamestore_marco.model.StoreItem
 import pt.iade.ei.gamestore_marco.ui.components.StoreItemCard
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
+import pt.iade.ei.gamestore_marco.R
+import pt.iade.ei.gamestore_marco.ui.theme.GameStore_marcoTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -199,5 +203,28 @@ fun GameDetailScreen(game: Game) {
                 )
             }
         }
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun GameDetailScreenPreview() {
+    GameStore_marcoTheme {
+        GameDetailScreen(
+            game = Game(
+                id = 1,
+                name = "Fortnite",
+                description = "Um jogo battle royale muito popular.",
+                imageRes = R.drawable.fortnitelogo,
+                items = listOf(
+                    StoreItem(
+                        id = 1,
+                        name = "Skin Iconic",
+                        description = "Skin de teste para preview",
+                        price = 10.0,
+                        imageRes = R.drawable.icoicfortnite
+                    )
+                )
+            )
+        )
     }
 }

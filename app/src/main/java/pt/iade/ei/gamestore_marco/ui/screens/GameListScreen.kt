@@ -19,6 +19,8 @@ import pt.iade.ei.gamestore_marco.MainActivity
 import pt.iade.ei.gamestore_marco.R
 import pt.iade.ei.gamestore_marco.model.Game
 import pt.iade.ei.gamestore_marco.ui.components.GameCard
+import androidx.compose.ui.tooling.preview.Preview
+import pt.iade.ei.gamestore_marco.ui.theme.GameStore_marcoTheme
 
 @Composable
 fun GameListScreen(
@@ -72,5 +74,29 @@ fun GameListScreen(
                 )
             }
         }
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun GameListScreenPreview() {
+    GameStore_marcoTheme {
+        GameListScreen(
+            games = listOf(
+                Game(
+                    id = 1,
+                    name = "Fortnite",
+                    description = "Battle royale",
+                    imageRes = R.drawable.fortnitelogo,
+                    items = emptyList()
+                ),
+                Game(
+                    id = 2,
+                    name = "Pokemon GO",
+                    description = "Realidade aumentada",
+                    imageRes = R.drawable.pokemongo,
+                    items = emptyList()
+                )
+            )
+        )
     }
 }
