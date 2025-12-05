@@ -14,7 +14,8 @@ import pt.iade.ei.gamestore_marco.ui.theme.GameStore_marcoTheme
 import pt.iade.ei.gamestore_marco.R
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import pt.iade.ei.gamestore_marco.ui.theme.GameStore_marcoTheme
+import pt.iade.ei.gamestore_marco.ui.screens.MainScreen
+
 
 
 private val sampleGames = listOf(
@@ -60,9 +61,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) {
 
-                    GameListScreen(
-                        games = sampleGames
-                    )
+                    MainScreen(games = sampleGames)
+
                 }
             }
         }
