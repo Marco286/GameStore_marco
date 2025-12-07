@@ -36,7 +36,7 @@ fun GameCard(
     ) {
         Box(modifier = Modifier.fillMaxSize()) {
 
-            // Background image
+
             Image(
                 painter = painterResource(id = game.imageRes),
                 contentDescription = game.name,
@@ -44,14 +44,14 @@ fun GameCard(
                 contentScale = ContentScale.Crop
             )
 
-            // Overlay escuro
+
             Box(
                 modifier = Modifier
                     .fillMaxSize()
                     .background(Color.Black.copy(alpha = 0.25f))
             )
 
-            // Gradient
+
             Box(
                 modifier = Modifier
                     .fillMaxSize()
@@ -65,7 +65,7 @@ fun GameCard(
                     )
             )
 
-            // Texto do jogo
+
             Column(
                 modifier = Modifier
                     .align(Alignment.BottomStart)

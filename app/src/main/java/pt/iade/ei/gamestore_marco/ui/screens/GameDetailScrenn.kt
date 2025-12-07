@@ -205,7 +205,7 @@ fun GameDetailScreen(game: Game) {
         }
     }
 }
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun GameDetailScreenPreview() {
     GameStore_marcoTheme {
@@ -213,15 +213,29 @@ fun GameDetailScreenPreview() {
             game = Game(
                 id = 1,
                 name = "Fortnite",
-                description = "Um jogo battle royale muito popular.",
+                description = "Fortnite é um jogo eletrônico multijogador online e uma plataforma de jogos desenvolvida pela Epic Games e lançada em 2017.",
                 imageRes = R.drawable.fortnitelogo,
                 items = listOf(
                     StoreItem(
                         id = 1,
                         name = "Skin Iconic",
-                        description = "Skin de teste para preview",
-                        price = 10.0,
+                        description = "Skin que te vai deixar com mais estilo nas tuas partidas.",
+                        price = 14.89,
                         imageRes = R.drawable.icoicfortnite
+                    ),
+                    StoreItem(
+                        id = 2,
+                        name = "13.500 V-Bucks",
+                        description = "Com tantas V-Bucks podes comprar o que quiseres!",
+                        price = 13.50,
+                        imageRes = R.drawable.vbucksfortnite
+                    ),
+                    StoreItem(
+                        id = 3,
+                        name = "Passe de Batalha",
+                        description = "Completa todos os níveis e recebe prémios incríveis!",
+                        price = 9.99,
+                        imageRes = R.drawable.passedebatalhafoty
                     )
                 )
             )

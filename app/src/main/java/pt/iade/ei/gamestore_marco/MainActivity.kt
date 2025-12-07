@@ -18,7 +18,7 @@ import pt.iade.ei.gamestore_marco.ui.screens.MainScreen
 
 
 
-private val sampleGames = listOf(
+ val sampleGames = listOf(
     Game(
         id = 1,
         name = "Fortnite",

@@ -5,7 +5,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import pt.iade.ei.gamestore_marco.R
-
+import androidx.compose.ui.tooling.preview.Preview
+import pt.iade.ei.gamestore_marco.ui.theme.GameStore_marcoTheme
 @Composable
 fun BottomBar() {
 
@@ -33,6 +34,13 @@ fun BottomBar() {
             icon = { Icon(painterResource(R.drawable.ic_profile), null) },
             label = { Text("Profile") }
         )
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun BottomBarPreview() {
+    GameStore_marcoTheme {
+        BottomBar()
     }
 }
 
